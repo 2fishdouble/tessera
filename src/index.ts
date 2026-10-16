@@ -1,4 +1,2 @@
-import {Snowflake} from "./SnowFlake";
+export {Snowflake} from "./SnowFlake";
 
-console.log('Happy developing ✨')
-console.log(Snowflake.nextId())

@@ -1,14 +1,46 @@
 {
-  "name": "tessera",
-  "version": "1.0.0",
-  "description": "tessera",
+  "name": "@jerryduff/tessera",
+  "version": "0.0.1",
+  "description": "Tessera: a growing collection of small, dependency-free utilities for Node.js",
+  "keywords": [
+    "tessera",
+    "utils",
+    "utilities",
+    "toolkit",
+    "snowflake",
+    "id",
+    "distributed-id",
+    "bigint",
+    "typescript"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2fishdouble/tessera.git"
+  },
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "tsc"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   },
   "dependencies": {},
   "devDependencies": {
     "typescript": "^6.0.3"
-  },
-  "private": true
+  }
 }
