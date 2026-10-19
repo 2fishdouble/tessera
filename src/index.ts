@@ -1,2 +1,1 @@
-export {Snowflake} from "./SnowFlake";
-
+export { Snowflake } from "./SnowFlake"

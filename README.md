@@ -19,16 +19,16 @@ Twitter Snowflake 算法的 BigInt 实现，返回字符串形式的 ID（避免
 结构：41 位时间戳 + 5 位数据中心 + 5 位机器 + 12 位序列号。
 
 ```ts
-import { Snowflake } from "@jerryduff/tessera";
+import { Snowflake } from "@jerryduff/tessera"
 
-const id = Snowflake.nextId();
+const id = Snowflake.nextId()
 // => "766207627628777472"
 ```
 
 CommonJS 也可以直接使用：
 
 ```js
-const { Snowflake } = require("@jerryduff/tessera");
+const { Snowflake } = require("@jerryduff/tessera")
 ```
 
 特点：
@@ -48,6 +48,17 @@ const { Snowflake } = require("@jerryduff/tessera");
 npm install
 npm run build   # tsc，产物输出到 dist/
 ```
+
+代码风格由 ESLint 与 Prettier 维护（配置见 `eslint.config.ts` 与 `.prettierrc.json`）：
+
+```bash
+npm run lint         # eslint .
+npm run lint:fix     # 自动修复可修复的问题
+npm run format       # prettier --write .
+npm run format:check # 只检查格式，不改文件
+```
+
+约定：4 空格缩进、行尾不加分号、双引号、每行最多 100 字符；JSON / Markdown 等非 TS 文件保持 2 空格缩进。
 
 ## License
 
