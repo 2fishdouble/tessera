@@ -19,7 +19,7 @@ Twitter Snowflake 算法的 BigInt 实现，返回字符串形式的 ID（避免
 结构：41 位时间戳 + 5 位数据中心 + 5 位机器 + 12 位序列号。
 
 ```ts
-import { Snowflake } from "@jerryduff/tessera"
+import { Snowflake } from '@jerryduff/tessera'
 
 const id = Snowflake.nextId()
 // => "766207627628777472"
@@ -28,7 +28,7 @@ const id = Snowflake.nextId()
 CommonJS 也可以直接使用：
 
 ```js
-const { Snowflake } = require("@jerryduff/tessera")
+const { Snowflake } = require('@jerryduff/tessera')
 ```
 
 特点：
